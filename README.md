@@ -1,4 +1,4 @@
-# 灰烬之魔女 · 伊蕾娜 AI
+# 灰之魔女 · 伊蕾娜 AI
 
 基于 LangChain + Kimi + Redis + ChromaDB + MySQL 构建的角色扮演 AI，扮演动漫《魔女之旅》中的伊蕾娜。
 
