@@ -1,0 +1,31 @@
+# ── 运行环境 ──────────────────────────────────────────────────
+# Python 3.12.12（conda 环境 RAG_1）
+# 以下版本均为实测可用版本
+
+# ── Web 框架 ──────────────────────────────────────────────────
+fastapi==0.115.0
+uvicorn==0.30.6
+
+# ── LangChain ────────────────────────────────────────────────
+langchain==1.2.10
+langchain-openai==1.1.11       # Kimi（兼容 OpenAI 接口）
+langchain-chroma==1.1.0        # ChromaDB 长期记忆 + RAG 知识库
+langchain-huggingface==1.2.1   # 本地 Embedding 模型封装
+
+# ── 向量数据库 ───────────────────────────────────────────────
+chromadb==1.5.4
+
+# ── 短期记忆 ─────────────────────────────────────────────────
+redis==5.0.8
+
+# ── Embedding & Reranker（本地运行，无需 API）──────────────────
+# CrossEncoder（Reranker）和 SentenceTransformer（Embedding）均在此包内
+# 模型首次运行时自动从 hf-mirror.com 下载，之后本地缓存
+sentence-transformers==3.1.1
+
+# ── RAG 文档解析 ──────────────────────────────────────────────
+pymupdf==1.27.2     # PDF 文字 + 图片提取
+
+# ── MySQL 持久化（MYSQL_ENABLED=true 时需要）──────────────────
+sqlalchemy==2.0.48
+pymysql==1.1.2
